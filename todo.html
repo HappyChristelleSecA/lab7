@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        
+            margin: 0 auto;
+            padding: 20px;
+          
+         
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            
+        }
+        #task-form {
+            display: flex;
+            margin-bottom: 20px;
+            height: 40px;
+        }
+        #task-input {
+            flex-grow: 1;
+            padding: 4px;
+            font-size: 16px;
+        }
+        #submit-btn {
+            padding: 5px 10px;
+            font-size: 16px;
+            background: linear-gradient(#e66465, #9198e5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        #task-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 24px;
+        }
+        .task-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .task-text {
+            flex-grow: 1;
+            margin-left: 10px;
+            color: white;
+        }
+        .completed {
+            
+            color: #888;
+        }
+        .delete-btn {
+            background-color: #f44336;
+            color: white;
+            border: 2px;
+            padding: 5px 10px;
+            cursor: pointer;
+           
+        }
+        div{
+          background-image: url("https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/f450d4e63211ef94ed6fd29409ac1a7d-1650457056397/pink%20color-min.jpg");
+            /* padding: 70px ;*/
+            margin: 70px ;
+            width: 60%;
+            height: 200%; 
+            margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>To-Do List</h1>
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="Enter a new task" required>
+        <button type="submit" id="submit-btn">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+</div>
+    <script src="todo.js"></script>
+</body>
+</html>
